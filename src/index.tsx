@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import Hello from './containers/Hello';
 import { Provider } from 'react-redux';
+import registerServiceWorker from './registerServiceWorker';
 import { createStore } from 'redux';
 import { enthusiasm } from './reducers/index';
 import { StoreState } from './types/index';
@@ -20,3 +21,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root') as HTMLElement
 );
+registerServiceWorker();
